@@ -52,25 +52,6 @@ export class ApicallComponent implements OnInit {
     })
   }
 
-  getChampionsNameById(URL : string, i : number ,ids : string){
-    this.request(URL)
-      .subscribe((data : any) => {
-        let c = data.data;
-        for (let x in c) {
-          if(c[x].key == ids) {
-            console.log(c[x].id);
-          }
-        }
-
-      })
-
-
-    // for (let i in championList) {
-    //   if(championList[i].key == 99) {
-    //     console.log(championList[i].id)
-    //   }
-    // }
-  }
 
   request(URL : string){
     return this.http.get(URL);
