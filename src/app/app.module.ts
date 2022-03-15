@@ -6,12 +6,18 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { SecondModuleComponent } from './second-module/second-module.component';
 import { ApicallComponent } from './apicall/apicall.component';
+import { InfosComponent } from './infos/infos.component';
+import { SafePipeComponent } from './safe-pipe/safe-pipe.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     SecondModuleComponent,
-    ApicallComponent
+    ApicallComponent,
+    InfosComponent,
+    SafePipeComponent,
+    SafePipeComponent,
   ],
   imports: [
     BrowserModule,

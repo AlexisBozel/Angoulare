@@ -1,3 +1,42 @@
-<h3>Angular test</h3>
-<a routerLink="/api" style="text-align: center"> recherche sur un streamer </a>
-<router-outlet></router-outlet>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+  <link rel="stylesheet" href="app.component.css">
+  <!-- Jquery needed -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="assets/basic_js.js"></script>
+</head>
+
+<body>
+<div id="head" class="container">
+  <a  href="#"><img src="assets/logooo.png" style="max-width: 500px" alt=""></a>
+</div>
+<div class="container-fluid px-0">
+  <header><!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-transparent">
+      <div class="container">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active"> <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#">MEN</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#">WOMEN</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#">KIDS</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#">BOYS</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#">GIRLS</a> </li>
+        </ul>
+      </div>
+    </nav> <!-- ./ end of navbar -->
+
+  </header>
+</div>
+
+<div class="container">
+  <h3>Angular test</h3>
+  <a routerLink="/api" style="text-align: center"> recherche sur un streamer </a>
+  <router-outlet></router-outlet>
+</div>
+
+</body>
+
+</html>

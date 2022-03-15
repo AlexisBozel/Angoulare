@@ -1,8 +1,5 @@
 
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
 
   <style>
     * {box-sizing: border-box;}
@@ -209,9 +206,11 @@
 
 <form #form="ngForm" (submit)="getUserInfos(form)" style="text-align: center">
   <input type="text" id="search" ngModel name="userName"/>
-  <button routerLink="/donnees" type="submit"><i class="fa fa-search"></i>chercher</button>
+  <button type="submit"><i class="fa fa-search"></i>chercher</button>
 </form>
 
-<app-second-module [test]="twitch_user" [img_url]="twitch_img_url" [followers]="twitch_user_total_followers" [partner]="twitch_partner" ></app-second-module>
+<app-second-module [name]="twitch_user" [img_url]="twitch_img_url" [followers]="twitch_user_total_followers"
+                   [partner]="twitch_partner" [description]="twitch_description" [stream_url]="twitch_stream_url"></app-second-module>
+
 
 <!--<textarea n-->

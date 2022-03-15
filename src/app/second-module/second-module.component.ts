@@ -1,5 +1,7 @@
-import { Component, OnInit, Input } from '@angular/core';
+import {Component, OnInit, Input} from '@angular/core';
+import {Router} from '@Angular/router'
 import {NgForm} from "@angular/forms";
+import {Observable, Subscription} from "rxjs";
 
 @Component({
   selector: 'app-second-module',
@@ -9,14 +11,20 @@ import {NgForm} from "@angular/forms";
 
 export class SecondModuleComponent implements OnInit {
 
-  @Input() test!: string
+
+  @Input() name!: string
   @Input() img_url!: string
   @Input() followers!: string
   @Input() partner!: string
+  @Input() description!: string
+  @Input() stream_url!: string
 
-  constructor() {}
+
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
+
 
 }
